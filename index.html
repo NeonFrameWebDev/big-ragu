@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#006400">
+<title>Big Ragu's Italian Kitchen &amp; Pub | Rocky Point, Mexico</title>
+<meta name="description" content="Real homemade Italian food in Puerto Penasco. Meatballs, pizza, pasta, full bar. $2 margaritas 1-4 PM daily. 9 Blvd. Freemont, Rocky Point.">
+<meta name="keywords" content="Big Ragu's, Italian restaurant Rocky Point, Puerto Penasco Italian food, meatballs Rocky Point, pizza Puerto Penasco, Big Ragu Italian Kitchen">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Big Ragu's Italian Kitchen &amp; Pub">
+<meta name="geo.region" content="MX-SON">
+<meta name="geo.placename" content="Puerto Penasco, Sonora, Mexico">
+<link rel="canonical" href="https://neonframewebdesign.github.io/big-ragu/">
+
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:title" content="Big Ragu's Italian Kitchen &amp; Pub | Rocky Point">
+<meta property="og:description" content="Real homemade Italian food in the heart of Rocky Point. Meatballs, pizza, pasta, full bar. $2 margaritas 1-4 PM.">
+<meta property="og:image" content="https://neonframewebdesign.github.io/big-ragu/assets/dish_5.jpg">
+<meta property="og:image:alt" content="Homemade meatballs in red sauce at Big Ragu's Italian Kitchen, Rocky Point Mexico">
+<meta property="og:url" content="https://neonframewebdesign.github.io/big-ragu/">
+<meta property="og:site_name" content="Big Ragu's Italian Kitchen &amp; Pub">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Big Ragu's Italian Kitchen &amp; Pub | Rocky Point">
+<meta name="twitter:description" content="Real homemade Italian food in Puerto Penasco. Meatballs, pizza, pasta, full bar.">
+<meta name="twitter:image" content="https://neonframewebdesign.github.io/big-ragu/assets/dish_5.jpg">
+
+<link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+
+<link rel="preload" as="image" href="assets/dish_5.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap"></noscript>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========================
+     LOADER
+     ======================== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="assets/logo.jpg" alt="" class="loader__logo" width="120" height="120">
+</div>
+
+<!-- ========================
+     NAV
+     ======================== -->
+<nav class="nav" id="nav" aria-label="Primary navigation">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" aria-label="Big Ragu's home">
+      <span class="nav__brand-text">BIG RAGU'S</span><span class="nav__brand-dot" aria-hidden="true"></span>
+    </a>
+
+    <div class="nav__right">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#menu" data-en="Menu" data-es="Menu">Menu</a></li>
+        <li><a href="#about" data-en="Our Story" data-es="Nuestra Historia">Our Story</a></li>
+        <li><a href="#find-us" data-en="Find Us" data-es="Encuéntranos">Find Us</a></li>
+        <li><a href="#bar" data-en="The Bar" data-es="El Bar">The Bar</a></li>
+      </ul>
+
+      <button class="nav__lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-label lang-label--en">EN</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-label lang-label--es">ES</span>
+      </button>
+
+      <a href="#menu" class="btn btn--nav" data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu__overlay" id="menuOverlay"></div>
+  <div class="mobile-menu__panel">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="#menu" data-en="Menu" data-es="Menu">Menu</a></li>
+      <li><a href="#about" data-en="Our Story" data-es="Nuestra Historia">Our Story</a></li>
+      <li><a href="#find-us" data-en="Find Us" data-es="Encuéntranos">Find Us</a></li>
+      <li><a href="#bar" data-en="The Bar" data-es="El Bar">The Bar</a></li>
+    </ul>
+    <a href="#menu" class="btn btn--primary mobile-menu__cta" data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
+  </div>
+</div>
+
+<!-- ========================
+     HERO
+     ======================== -->
+<section class="hero" id="top" aria-label="Hero">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <h1 class="hero__headline"
+        data-en="GRAB LIFE BY THE MEATBALLS"
+        data-es="AGARRA LA VIDA POR LAS ALB&Oacute;NDIGAS">GRAB LIFE BY THE MEATBALLS</h1>
+    <p class="hero__sub"
+       data-en="Real homemade Italian food in the heart of Rocky Point. Come hungry."
+       data-es="Cocina italiana de verdad, hecha a mano, en el coraz&oacute;n de Rocky Point. Ven con hambre.">Real homemade Italian food in the heart of Rocky Point. Come hungry.</p>
+    <div class="hero__actions">
+      <a href="#menu" class="btn btn--primary" data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
+      <a href="tel:+526381254760" class="btn btn--secondary" data-en="Call to Reserve" data-es="Llamar para reservar">Call to Reserve</a>
+    </div>
+    <p class="hero__happy-hour" data-en="Happy hour: $2 margaritas, 1&ndash;4 PM daily" data-es="Hora feliz: margaritas a $2, de 1 a 4 PM todos los d&iacute;as">Happy hour: $2 margaritas, 1&ndash;4 PM daily</p>
+  </div>
+  <div class="hero__strip">
+    <span data-en="Boom Boom Baby!!" data-es="Boom Boom Baby!!">Boom Boom Baby!!</span>
+  </div>
+</section>
+
+<!-- ========================
+     ABOUT / OUR STORY
+     ======================== -->
+<section class="about reveal" id="about" aria-label="Our Story">
+  <div class="about__inner wrap">
+    <div class="about__photo-col">
+      <div class="about__photo-frame"></div>
+    </div>
+    <div class="about__text-col">
+      <span class="eyebrow eyebrow--green"
+            data-en="Meet Pop&#39;s"
+            data-es="Meet Pop&#39;s">Meet Pop's</span>
+      <h2 class="about__headline">
+        <span class="about__headline-text"
+              data-en="The Story Behind the Ragu"
+              data-es="La Historia del Ragu">The Story Behind the Ragu</span>
+      </h2>
+      <div class="about__food-is-love" aria-hidden="true">Food Is Love.</div>
+      <div class="about__body">
+        <p data-en="Pop&#39;s makes everything from scratch. The mozzarella is fresh. The marinara is homemade. The meatballs are hand-rolled. Carmine Spinelli brought real Italian cooking to Rocky Point, and people keep coming back."
+           data-es="Pop&#39;s lo cocina todo desde cero. La mozzarella es fresca. La marinara es casera. Las alb&oacute;ndigas las hace a mano. Carmine Spinelli trajo la cocina italiana de verdad a Puerto Pe&ntilde;asco, y la gente no para de regresar.">Pop's makes everything from scratch. The mozzarella is fresh. The marinara is homemade. The meatballs are hand-rolled. Carmine Spinelli brought real Italian cooking to Rocky Point, and people keep coming back.</p>
+        <p data-en="Before Big Ragu, there was nowhere like this in Puerto Penasco. Now there is. Authentic Italian food, a full pub bar, football on TV, and tables that fill up because nobody wants to leave. Carmine&#39;s philosophy is simple: Food is Love. The wall says the rest."
+           data-es="Antes de que llegaramos aqu&iacute;, en Rocky Point no hab&iacute;a un lugar as&iacute;. Ahora lo hay. Cocina italiana aut&eacute;ntica, un bar con ambiente de pub, televisions para el futbol americano y la sobremesa que se extiende porque nadie quiere irse. Para Carmine, la filosof&iacute;a es sencilla: la comida es amor. Todo lo dem&aacute;s lo dice la pared.">Before Big Ragu, there was nowhere like this in Puerto Penasco. Now there is. Authentic Italian food, a full pub bar, football on TV, and tables that fill up because nobody wants to leave. Carmine's philosophy is simple: Food is Love. The wall says the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     MENU TEASER
+     ======================== -->
+<section class="menu-section" id="menu" aria-label="Menu">
+  <div class="wrap">
+    <h2 class="menu-section__headline"
+        data-en="What&#39;s Coming Out of the Kitchen"
+        data-es="Lo Que Sale de la Cocina">What's Coming Out of the Kitchen</h2>
+
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab menu-tab--active" role="tab" aria-selected="true" aria-controls="tab-pizza" id="btn-pizza"
+              data-en="Pizza" data-es="Pizza">Pizza</button>
+      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-pasta" id="btn-pasta"
+              data-en="Pasta" data-es="Pasta">Pasta</button>
+      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-meatballs" id="btn-meatballs"
+              data-en="Meatballs" data-es="Alb&oacute;ndigas">Meatballs</button>
+      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-ravioli" id="btn-ravioli"
+              data-en="Fried Ravioli" data-es="Ravioles Empanizados">Fried Ravioli</button>
+      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-cannoli" id="btn-cannoli"
+              data-en="Cannoli" data-es="Cannoli">Cannoli</button>
+      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-starters" id="btn-starters"
+              data-en="Salads &amp; Starters" data-es="Ensaladas y Entradas">Salads &amp; Starters</button>
+    </div>
+
+    <!-- Pizza -->
+    <div class="menu-panel menu-panel--active" id="tab-pizza" role="tabpanel" aria-labelledby="btn-pizza">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_1.jpg');background-position:0% 0%;background-size:200%;" role="img" aria-label="Pizza"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Pepperoni Pizza" data-es="Pizza de Pepperoni">Pepperoni Pizza</h3>
+            <p class="menu-card__desc"
+               data-en="Homemade dough, fresh mozzarella, marinara that tastes like it should. This one has regulars."
+               data-es="Masa hecha en casa, mozzarella fresca, salsa como debe ser. Ya tiene sus fans de regreso a regreso.">Homemade dough, fresh mozzarella, marinara that tastes like it should. This one has regulars.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_1.jpg');background-position:100% 0%;background-size:200%;" role="img" aria-label="Margherita Pizza"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Margherita Pizza" data-es="Pizza Margarita">Margherita Pizza</h3>
+            <p class="menu-card__desc"
+               data-en="Fresh mozzarella, homemade sauce, and basil. Simple done right."
+               data-es="Mozzarella fresca, salsa casera y albahaca. Lo sencillo hecho bien.">Fresh mozzarella, homemade sauce, and basil. Simple done right.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Pasta -->
+    <div class="menu-panel" id="tab-pasta" role="tabpanel" aria-labelledby="btn-pasta" hidden>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_1.jpg');background-position:0% 100%;background-size:200%;" role="img" aria-label="Spaghetti and Meatballs"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Spaghetti &amp; Meatballs" data-es="Espagueti con Alb&oacute;ndigas">Spaghetti &amp; Meatballs</h3>
+            <p class="menu-card__desc"
+               data-en="The house classic. Homemade marinara, hand-rolled meatballs, the pasta cooked right."
+               data-es="El cl&aacute;sico de la casa. Marinara casera, alb&oacute;ndigas hechas a mano, la pasta cocida como debe ser.">The house classic. Homemade marinara, hand-rolled meatballs, the pasta cooked right.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_2.jpg');background-position:100% 0%;background-size:200%;" role="img" aria-label="Lasagna"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Lasagna" data-es="Lasagna">Lasagna</h3>
+            <p class="menu-card__desc"
+               data-en="Layered, homemade, and built the way it's supposed to be. Enough said."
+               data-es="En capas, casera, hecha como corresponde. Suficiente con eso.">Layered, homemade, and built the way it's supposed to be. Enough said.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img menu-card__img--placeholder" role="img" aria-label="House Ragu placeholder"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="House Rag&ugrave;" data-es="Rag&ugrave; de la Casa">House Rag&ugrave;</h3>
+            <p class="menu-card__desc"
+               data-en="The recipe that gives the place its name. We don&#39;t share it. We just serve it."
+               data-es="La receta que le da nombre al lugar. No la compartimos. Solo la servimos.">The recipe that gives the place its name. We don't share it. We just serve it.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Meatballs -->
+    <div class="menu-panel" id="tab-meatballs" role="tabpanel" aria-labelledby="btn-meatballs" hidden>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_1.jpg');background-position:0% 100%;background-size:200%;" role="img" aria-label="Meatballs in Marinara"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Homemade Meatballs" data-es="Alb&oacute;ndigas Caseras">Homemade Meatballs</h3>
+            <p class="menu-card__desc"
+               data-en="Hand-rolled, in homemade marinara, served the way they&#39;re supposed to be. The stars of the menu."
+               data-es="Hechas a mano, en salsa marinara casera, servidas como deben ser. Las estrellas del menu.">Hand-rolled, in homemade marinara, served the way they're supposed to be. The stars of the menu.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img menu-card__img--placeholder" role="img" aria-label="Meatball Sub placeholder"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Meatball Sub" data-es="Torta de Alb&oacute;ndigas">Meatball Sub</h3>
+            <p class="menu-card__desc"
+               data-en="Same hand-rolled meatballs in a sub if you want something serious."
+               data-es="Las mismas alb&oacute;ndigas caseras en torta, si quieres algo que te llene de verdad.">Same hand-rolled meatballs in a sub if you want something serious.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Fried Ravioli -->
+    <div class="menu-panel" id="tab-ravioli" role="tabpanel" aria-labelledby="btn-ravioli" hidden>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_2.jpg');background-position:100% 0%;background-size:200%;" role="img" aria-label="Fried Ravioli"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Homemade Fried Ravioli" data-es="Ravioles Empanizados Caseros">Homemade Fried Ravioli</h3>
+            <p class="menu-card__desc"
+               data-en="Crispy outside, stuffed inside, with marinara for dipping. People order these before they&#39;ve looked at anything else."
+               data-es="Crujientes por fuera, rellenos por dentro, con marinara para mojar. Ya los piden antes de ver el menu.">Crispy outside, stuffed inside, with marinara for dipping. People order these before they've looked at anything else.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Cannoli -->
+    <div class="menu-panel" id="tab-cannoli" role="tabpanel" aria-labelledby="btn-cannoli" hidden>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_2.jpg');background-position:0% 0%;background-size:200%;" role="img" aria-label="Cannoli Tray"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Homemade Cannoli" data-es="Cannoli Caseros">Homemade Cannoli</h3>
+            <p class="menu-card__desc"
+               data-en="The shell cracks. The filling is creamy. Available by the piece or on a tray for the whole table. They go fast."
+               data-es="La concha es crujiente. El relleno es cremoso. Por pieza o en charola para grupos. Terminan r&aacute;pido.">The shell cracks. The filling is creamy. Available by the piece or on a tray for the whole table. They go fast.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_6.jpg');background-position:50% 50%;background-size:cover;" role="img" aria-label="Cannoli Closeup"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Cannoli by the Piece" data-es="Cannoli por Pieza">Cannoli by the Piece</h3>
+            <p class="menu-card__desc"
+               data-en="One is never enough. Order more. You&#39;re on vacation."
+               data-es="Uno nunca es suficiente. Pide m&aacute;s. Est&aacute;s de vacaciones.">One is never enough. Order more. You're on vacation.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Salads and Starters -->
+    <div class="menu-panel" id="tab-starters" role="tabpanel" aria-labelledby="btn-starters" hidden>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_1.jpg');background-position:100% 0%;background-size:200%;" role="img" aria-label="Antipasto Salad"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Antipasto Salad" data-es="Ensalada Antipasto">Antipasto Salad</h3>
+            <p class="menu-card__desc"
+               data-en="Start somewhere good before the main event."
+               data-es="Para empezar bien antes de lo que sigue.">Start somewhere good before the main event.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_2.jpg');background-position:100% 100%;background-size:200%;" role="img" aria-label="Chopped Italian Salad"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Italian Salad" data-es="Ensalada Italiana">Italian Salad</h3>
+            <p class="menu-card__desc"
+               data-en="Crisp, classic, and honest. Cheese bread on the side."
+               data-es="Fresca, cl&aacute;sica y honesta. Pan de queso al lado.">Crisp, classic, and honest. Cheese bread on the side.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card__img" style="background-image:url('assets/dish_2.jpg');background-position:0% 100%;background-size:200%;" role="img" aria-label="Wings"></div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name" data-en="Wings" data-es="Alitas">Wings</h3>
+            <p class="menu-card__desc"
+               data-en="Good for the game. Good for any reason."
+               data-es="Buenas para el partido. Buenas para cualquier ocasi&oacute;n.">Good for the game. Good for any reason.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================
+     GALLERY
+     ======================== -->
+<section class="gallery reveal" id="gallery" aria-label="Gallery">
+  <div class="wrap">
+    <span class="eyebrow eyebrow--cobalt" data-en="The Place" data-es="El Lugar">The Place</span>
+    <h2 class="gallery__headline"
+        data-en="Come for the Food, Stay for the Vibe"
+        data-es="Ven por la Comida, Qu&eacute;date por el Ambiente">Come for the Food, Stay for the Vibe</h2>
+  </div>
+
+  <div class="gallery__grid">
+    <!-- Row 1 -->
+    <button class="gallery__item gallery__item--wide" data-src="assets/interior_1.jpg" data-caption="Inside Big Ragu&#39;s" aria-label="Open photo: restaurant interior">
+      <img src="assets/interior_1.jpg" alt="Big Ragu's interior bar area with cobalt tile and warm lighting" loading="lazy">
+    </button>
+    <button class="gallery__item gallery__item--tall" data-src="assets/signage_1.jpg" data-caption="Grab Life by the Meatballs" aria-label="Open photo: Grab Life by the Meatballs poster">
+      <img src="assets/signage_1.jpg" alt="Framed Grab Life by the Meatballs poster inside Big Ragu's" loading="lazy">
+    </button>
+    <!-- Row 2 -->
+    <button class="gallery__item" data-src="assets/dish_2.jpg" data-caption="Cannoli tray" aria-label="Open photo: cannoli tray">
+      <img src="assets/dish_2.jpg" alt="Cannoli tray at Big Ragu's Italian Kitchen" loading="lazy">
+    </button>
+    <button class="gallery__item" data-src="assets/dish_1.jpg" data-caption="Pizza fresh from the kitchen" aria-label="Open photo: pizza">
+      <img src="assets/dish_1.jpg" alt="Pizza at Big Ragu's Italian Kitchen" loading="lazy">
+    </button>
+    <button class="gallery__item" data-src="assets/dish_6.jpg" data-caption="Cannoli closeup" aria-label="Open photo: cannoli closeup">
+      <img src="assets/dish_6.jpg" alt="Cannoli closeup at Big Ragu's" loading="lazy">
+    </button>
+    <!-- Placeholder slots -->
+    <div class="gallery__item gallery__placeholder" aria-label="Photo coming soon: exterior">
+      <span data-en="[Photo coming soon]" data-es="[Foto pr&oacute;ximamente]">[Photo coming soon]</span>
+      <small data-en="Exterior" data-es="Exterior">Exterior</small>
+    </div>
+    <div class="gallery__item gallery__placeholder" aria-label="Photo coming soon: outdoor seating">
+      <span data-en="[Photo coming soon]" data-es="[Foto pr&oacute;ximamente]">[Photo coming soon]</span>
+      <small data-en="Outdoor Seating" data-es="Terraza">Outdoor Seating</small>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     HAPPY HOUR / BAR
+     ======================== -->
+<section class="bar-section reveal" id="bar" aria-label="Bar and Happy Hour">
+  <div class="bar-section__inner wrap">
+    <div class="bar-section__promo">
+      <div class="bar-section__price" data-en="$2 Margaritas" data-es="Margaritas a $2">$2 Margaritas</div>
+      <div class="bar-section__time" data-en="1&ndash;4 PM Daily" data-es="De 1 a 4 PM Todos los D&iacute;as">1&ndash;4 PM Daily</div>
+      <p class="bar-section__body"
+         data-en="Full bar. Cold beers. Cocktails. Wine. And $2 margaritas from 1 to 4 PM every day we&#39;re open."
+         data-es="Bar completo. Cervezas fr&iacute;as. Cocteles. Vino. Y margaritas a 2 d&oacute;lares de 1 a 4 PM, todos los d&iacute;as que abrimos.">Full bar. Cold beers. Cocktails. Wine. And $2 margaritas from 1 to 4 PM every day we're open.</p>
+      <p class="bar-section__body"
+         data-en="The pub has its own personality. TVs for the game, a foosball table, outdoor seating when the weather cooperates. You don&#39;t need a reason to stay longer. You just will."
+         data-es="El pub tiene su personalidad. Hay televisiones para los partidos, mesa de futbol&iacute;n, y mesas afuera cuando el clima lo permite. No hace falta pretexto para quedarse un rato m&aacute;s.">The pub has its own personality. TVs for the game, a foosball table, outdoor seating when the weather cooperates. You don't need a reason to stay longer. You just will.</p>
+      <p class="bar-section__note" data-en="* Closed Wednesdays" data-es="* Cerrado los mi&eacute;rcoles">* Closed Wednesdays</p>
+    </div>
+    <div class="bar-section__photo">
+      <img src="assets/interior_1.jpg" alt="Big Ragu's bar and interior" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     TESTIMONIALS
+     ======================== -->
+<section class="testimonials reveal" id="reviews" aria-label="Guest Reviews">
+  <div class="wrap">
+    <span class="eyebrow eyebrow--green" data-en="Guest Voices" data-es="Lo que dicen">Guest Voices</span>
+    <h2 class="testimonials__headline"
+        data-en="Straight from the Table"
+        data-es="Directo desde la Mesa">Straight from the Table</h2>
+    <div class="testimonials__grid">
+      <blockquote class="testimonial-card reveal">
+        <p class="testimonial-card__quote">"Food was excellent, staff and Pop's the owner were very welcoming! Casual atmosphere with generous portions of authentically made food. We'll be back."</p>
+        <footer class="testimonial-card__attr">
+          <cite>Travelling_Couple_10</cite>
+          <span class="testimonial-card__source">TripAdvisor</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card reveal">
+        <p class="testimonial-card__quote">"Just got back from Italy and can't believe how good and authentic this is!!"</p>
+        <footer class="testimonial-card__attr">
+          <cite>Jerri V.</cite>
+          <span class="testimonial-card__source">TripAdvisor</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card reveal">
+        <p class="testimonial-card__quote">"Make you feel like family. Great food, great drinks -- will be a return trip every time I come to Penasco."</p>
+        <footer class="testimonial-card__attr">
+          <cite>Lance Tardiff</cite>
+          <span class="testimonial-card__source">Restaurant Guru</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FIND US / LOCATION
+     ======================== -->
+<section class="find-us reveal" id="find-us" aria-label="Location and Hours">
+  <div class="find-us__inner wrap">
+    <div class="find-us__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.5!2d-113.5369!3d31.3035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d2d8e4a1234567%3A0xabcdef1234567890!2s9%20Blvd.%20Freemont%2C%20Puerto%20Pe%C3%B1asco%2C%20Son.%2083550%2C%20Mexico!5e0!3m2!1sen!2sus!4v1700000000000"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Big Ragu's Italian Kitchen location on Google Maps"
+        aria-label="Map showing Big Ragu's location at 9 Blvd. Freemont, Puerto Penasco">
+      </iframe>
+    </div>
+    <div class="find-us__info reveal">
+      <span class="eyebrow eyebrow--red" data-en="Come Hungry" data-es="Ven con Hambre">Come Hungry</span>
+      <h2 class="find-us__headline"
+          data-en="Find Us in Rocky Point"
+          data-es="Enc&uacute;entranos en Rocky Point">Find Us in Rocky Point</h2>
+      <address class="find-us__address">
+        9 Blvd. Freemont<br>
+        Puerto Penasco, Sonora, Mexico 83550
+      </address>
+      <p class="find-us__landmark" data-en="Near the Las Conchas roundabout. Free parking." data-es="Cerca de Las Conchas. Estacionamiento gratuito.">Near the Las Conchas roundabout. Free parking.</p>
+      <a href="tel:+526381254760" class="find-us__phone">+52 638 125 4760</a>
+
+      <div class="hours-table-wrap">
+        <table class="hours-table" aria-label="Hours of operation">
+          <caption class="sr-only">Hours of operation</caption>
+          <tbody>
+            <tr>
+              <td data-en="Sun" data-es="Dom">Sun</td>
+              <td>12:00 PM &ndash; 9:00 PM</td>
+            </tr>
+            <tr>
+              <td data-en="Mon" data-es="Lun">Mon</td>
+              <td>1:00 PM &ndash; 9:00 PM</td>
+            </tr>
+            <tr>
+              <td data-en="Tue" data-es="Mar">Tue</td>
+              <td>12:00 PM &ndash; 9:00 PM</td>
+            </tr>
+            <tr class="hours-table__closed">
+              <td data-en="Wed" data-es="Mie">Wed</td>
+              <td data-en="Closed" data-es="Cerrado">Closed</td>
+            </tr>
+            <tr>
+              <td data-en="Thu" data-es="Jue">Thu</td>
+              <td>12:00 PM &ndash; 9:00 PM</td>
+            </tr>
+            <tr>
+              <td data-en="Fri" data-es="Vie">Fri</td>
+              <td>12:00 PM &ndash; 10:00 PM <span class="hours-asterisk" title="Opening time to be verified with client">*</span></td>
+            </tr>
+            <tr>
+              <td data-en="Sat" data-es="S&aacute;b">Sat</td>
+              <td>12:00 PM &ndash; 10:00 PM <span class="hours-asterisk" title="Opening time to be verified with client">*</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="hours-verify" data-en="* Open time to be confirmed" data-es="* Horario de apertura a confirmar">* Open time to be confirmed</p>
+      </div>
+
+      <div class="find-us__socials">
+        <a href="https://www.facebook.com/mamamiapizza212" class="find-us__social-link" target="_blank" rel="noopener noreferrer" aria-label="Big Ragu's on Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/thebigragu" class="find-us__social-link" target="_blank" rel="noopener noreferrer" aria-label="Big Ragu's on Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>@thebigragu</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CTA STRIP
+     ======================== -->
+<section class="cta-strip reveal" aria-label="Call to action">
+  <div class="wrap">
+    <h2 class="cta-strip__headline"
+        data-en="The table is ready."
+        data-es="La mesa est&aacute; lista.">The table is ready.</h2>
+    <p class="cta-strip__sub"
+       data-en="Come eat. Come drink. Come hang around for a while."
+       data-es="Ven a comer. Ven a beber. Ven a quedarte un rato.">Come eat. Come drink. Come hang around for a while.</p>
+    <div class="cta-strip__actions">
+      <a href="tel:+526381254760" class="btn btn--primary"
+         data-en="Call Us" data-es="Ll&aacute;manos">Call Us</a>
+      <a href="https://www.facebook.com/mamamiapizza212" class="btn btn--outline" target="_blank" rel="noopener noreferrer"
+         data-en="Follow Us on Facebook" data-es="S&iacute;guenos en Facebook">Follow Us on Facebook</a>
+      <a href="#menu" class="btn btn--outline"
+         data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+     ======================== -->
+<footer class="footer" aria-label="Site footer">
+  <div class="footer__inner wrap">
+    <div class="footer__brand">
+      <div class="footer__brand-name">Big Ragu's Italian Kitchen &amp; Pub</div>
+      <div class="footer__tagline" data-en="Food is Love. Boom Boom Baby!!" data-es="La comida es amor. Boom Boom Baby!!">Food is Love. Boom Boom Baby!!</div>
+    </div>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="#menu" data-en="Menu" data-es="Menu">Menu</a>
+      <a href="#about" data-en="Our Story" data-es="Nuestra Historia">Our Story</a>
+      <a href="#find-us" data-en="Find Us" data-es="Enc&uacute;entranos">Find Us</a>
+    </nav>
+    <div class="footer__socials">
+      <a href="https://www.facebook.com/mamamiapizza212" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/thebigragu" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="wrap">
+      <p class="footer__address">9 Blvd. Freemont, Puerto Penasco, Sonora, Mexico 83550 &nbsp;&middot;&nbsp; <a href="tel:+526381254760">+52 638 125 4760</a></p>
+      <p class="footer__copy">&copy; 2026 Big Ragu's Italian Kitchen &amp; Pub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================
+     LIGHTBOX
+     ======================== -->
+<div class="lightbox" id="lightbox" aria-modal="true" aria-label="Photo lightbox" role="dialog" hidden>
+  <div class="lightbox__overlay" id="lightboxOverlay"></div>
+  <div class="lightbox__content">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+  </div>
+</div>
+
+<script type="module" src="i18n.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
