@@ -32,9 +32,9 @@
 <link rel="preload" as="image" href="assets/dish_5.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap" as="style">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&display=swap"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&family=Caveat:wght@400;600;700&family=Permanent+Marker&family=Special+Elite&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&family=Caveat:wght@400;600;700&family=Permanent+Marker&family=Special+Elite&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700;800;900&family=Lato:wght@400;700&family=Caveat:wght@400;600;700&family=Permanent+Marker&family=Special+Elite&display=swap"></noscript>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -97,46 +97,88 @@
 </div>
 
 <!-- ========================
-     HERO
+     HERO - Editorial Trattoria
      ======================== -->
-<section class="hero" id="top" aria-label="Hero">
-  <img class="hero__bg" src="assets/dish_5.jpg" alt="Homemade meatballs in marinara at Big Ragu's" fetchpriority="high" decoding="async">
-  <div class="hero__overlay"></div>
-  <div class="hero__content">
-    <h1 class="hero__headline"
-        data-en="GRAB LIFE BY THE MEATBALLS"
-        data-es="AGARRA LA VIDA POR LAS ALB&Oacute;NDIGAS">GRAB LIFE BY THE MEATBALLS</h1>
-    <p class="hero__sub"
-       data-en="Real homemade Italian food in the heart of Rocky Point. Come hungry."
-       data-es="Cocina italiana de verdad, hecha a mano, en el coraz&oacute;n de Rocky Point. Ven con hambre.">Real homemade Italian food in the heart of Rocky Point. Come hungry.</p>
-    <div class="hero__actions">
-      <a href="#menu" class="btn btn--primary" data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
-      <a href="tel:+526381254760" class="btn btn--secondary" data-en="Call to Reserve" data-es="Llamar para reservar">Call to Reserve</a>
+<section class="hero hero-editorial" id="top" aria-label="Hero">
+  <div class="hero-editorial__inner">
+
+    <div class="hero-editorial__left">
+      <p class="hero-editorial__eyebrow" data-en="Rocky Point's Italian Kitchen &amp; Pub" data-es="Cocina Italiana y Pub de Rocky Point">
+        <span class="pennant" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-en="Rocky Point's Italian Kitchen &amp; Pub" data-es="Cocina Italiana y Pub de Rocky Point">Rocky Point's Italian Kitchen &amp; Pub</span>
+      </p>
+
+      <h1 class="hero-editorial__h1">
+        <span data-en="Grab Life" data-es="Agarra la Vida">Grab Life</span><br>
+        <span data-en="By The" data-es="Por las">By The</span>
+        <span class="with-doodle">
+          <span class="accent-red scribble" data-en="Meatballs." data-es="Alb&oacute;ndigas.">Meatballs.</span>
+          <svg class="doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+            <path d="M14 18c-2-5 1-9 5-7M22 14c-1-4 2-8 6-6M30 13c0-4 4-7 8-4" stroke="#CC0000" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="30" cy="38" r="14" fill="#7a2d0e" stroke="#3d1605" stroke-width="2"/>
+            <path d="M21 34c2-2 5-3 7-1M33 33c2 1 4 2 5 4M24 42c2 2 5 2 7 1" stroke="#3d1605" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="hero-editorial__sub"
+         data-en="Pop's cooks everything from scratch. Homemade pasta, hand-rolled meatballs, pizza dough made fresh. Come hungry."
+         data-es="Pop's lo cocina todo desde cero. Pasta casera, alb&oacute;ndigas hechas a mano, masa de pizza fresca. Ven con hambre.">Pop's cooks everything from scratch. Homemade pasta, hand-rolled meatballs, pizza dough made fresh. Come hungry.</p>
+
+      <div class="hero-editorial__actions">
+        <a href="#menu" class="btn btn--primary" data-en="See the Menu" data-es="Ver el Menu">See the Menu</a>
+        <a href="tel:+526381254760" class="hero-editorial__phone-link" aria-label="Call Big Ragu's">
+          <svg class="doodle doodle--sm" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 5c0-1 1-2 2-2h3l2 5-2 1c1 3 4 6 7 7l1-2 5 2v3c0 1-1 2-2 2C9 21 3 15 3 5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          <span>638 125 4760</span>
+        </a>
+      </div>
+
+      <span class="stamp stamp--green stamp--rotate-flat" style="position:absolute; bottom:-20px; left:8px;" aria-hidden="true">Open Daily &middot; Closed Wednesdays</span>
     </div>
+
+    <div class="hero-editorial__right">
+      <div class="polaroid polaroid--tilt-r hero-editorial__polaroid">
+        <img src="assets/dish_5.jpg" alt="Homemade meatballs in marinara at Big Ragu's" fetchpriority="high" decoding="async">
+        <span class="polaroid__caption">Pop's meatballs, today</span>
+      </div>
+      <span class="stamp stamp--lg hero-editorial__stamp-pos" aria-hidden="true">Boom Boom Baby!!</span>
+    </div>
+
   </div>
-  <div class="hero__strip">
-    <span data-en="Boom Boom Baby!!" data-es="Boom Boom Baby!!">Boom Boom Baby!!</span>
+
+  <div class="hero-editorial__strip">
+    <span data-en="Food Is Love" data-es="La Comida es Amor">Food Is Love</span>
   </div>
 </section>
 
 <!-- ========================
      ABOUT / OUR STORY
      ======================== -->
-<section class="about reveal" id="about" aria-label="Our Story">
+<section class="about about--editorial reveal" id="about" aria-label="Our Story">
   <div class="about__inner wrap">
     <div class="about__photo-col">
-      <div class="about__photo-frame"></div>
+      <div class="polaroid polaroid--tilt-l polaroid--tape-l about-polaroid">
+        <img src="assets/interior_1.jpg" alt="Inside Big Ragu's Italian Kitchen">
+        <span class="polaroid__caption">The dining room</span>
+      </div>
     </div>
     <div class="about__text-col">
       <span class="eyebrow eyebrow--green"
             data-en="Meet Pop&#39;s"
-            data-es="Meet Pop&#39;s">Meet Pop's</span>
+            data-es="Conoce a Pop&#39;s">Meet Pop's</span>
       <h2 class="about__headline">
         <span class="about__headline-text"
               data-en="The Story Behind the Ragu"
               data-es="La Historia del Ragu">The Story Behind the Ragu</span>
       </h2>
-      <div class="about__food-is-love" aria-hidden="true">Food Is Love.</div>
+      <div class="food-is-love-script" aria-hidden="true">
+        Food Is Love
+        <svg class="doodle doodle--sm" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 21s-7-4.5-9-9c-1.5-3.5 1-7 4.5-7 2 0 3.5 1 4.5 2.5C13 6 14.5 5 16.5 5 20 5 22.5 8.5 21 12c-2 4.5-9 9-9 9z" fill="#CC0000" stroke="#7a0000" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <div class="about__body">
         <p data-en="Pop&#39;s makes everything from scratch. The mozzarella is fresh. The marinara is homemade. The meatballs are hand-rolled. Carmine Spinelli brought real Italian cooking to Rocky Point, and people keep coming back."
            data-es="Pop&#39;s lo cocina todo desde cero. La mozzarella es fresca. La marinara es casera. Las alb&oacute;ndigas las hace a mano. Carmine Spinelli trajo la cocina italiana de verdad a Puerto Pe&ntilde;asco, y la gente no para de regresar.">Pop's makes everything from scratch. The mozzarella is fresh. The marinara is homemade. The meatballs are hand-rolled. Carmine Spinelli brought real Italian cooking to Rocky Point, and people keep coming back.</p>
@@ -148,15 +190,187 @@
 </section>
 
 <!-- ========================
-     MENU TEASER
+     MENU - real menu typography
      ======================== -->
-<section class="menu-section" id="menu" aria-label="Menu">
+<section class="menu-section paper-bg reveal" id="menu" aria-label="Menu" style="padding: 4rem 0 5rem;">
   <div class="wrap">
-    <h2 class="menu-section__headline"
-        data-en="What&#39;s Coming Out of the Kitchen"
-        data-es="Lo Que Sale de la Cocina">What's Coming Out of the Kitchen</h2>
+    <div class="menu-list-header">
+      <p class="menu-list-header__overline" data-en="Pop's Kitchen &middot; Rocky Point" data-es="La Cocina de Pop's &middot; Rocky Point">Pop's Kitchen &middot; Rocky Point</p>
+      <h2 class="menu-list-header__title" data-en="The Menu" data-es="El Menu">The Menu</h2>
+      <span class="menu-list-header__rule"></span>
+    </div>
 
-    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+    <div class="menu-list-wrap">
+
+      <div class="menu-list-cols">
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <circle cx="30" cy="30" r="22" fill="#F4D9A3" stroke="#CC0000" stroke-width="2.2"/>
+              <path d="M14 30c0-9 7-16 16-16" stroke="#CC0000" stroke-width="2" fill="none"/>
+              <circle cx="22" cy="24" r="2.5" fill="#CC0000"/>
+              <circle cx="36" cy="28" r="2.5" fill="#CC0000"/>
+              <circle cx="28" cy="36" r="2.5" fill="#CC0000"/>
+              <circle cx="40" cy="22" r="2" fill="#7a0000"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Pizza" data-es="Pizza">Pizza</h3>
+            <span class="menu-section-header__es" data-en="Homemade dough, daily" data-es="Masa hecha en casa, a diario">Homemade dough, daily</span>
+          </header>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Pepperoni Pizza" data-es="Pizza de Pepperoni">Pepperoni Pizza</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Fresh mozzarella, marinara that tastes like it should. Has regulars." data-es="Mozzarella fresca, salsa como debe ser. Tiene sus habituales.">Fresh mozzarella, marinara that tastes like it should. Has regulars.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Margherita" data-es="Margarita">Margherita</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Mozzarella, sauce, basil. Simple done right." data-es="Mozzarella, salsa, albahaca. Lo sencillo hecho bien.">Mozzarella, sauce, basil. Simple done right.</p>
+          </div>
+        </div>
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <path d="M10 22c4-4 36-4 40 0M12 22v18c0 6 5 10 18 10s18-4 18-10V22" stroke="#CC0000" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+              <path d="M16 24c2 6 4 8 8 8M28 24c1 8 3 12 6 16M40 24c-1 4-2 6-4 8" stroke="#CC0000" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Pasta" data-es="Pasta">Pasta</h3>
+            <span class="menu-section-header__es" data-en="Slow-cooked, always" data-es="Cocinada lento, siempre">Slow-cooked, always</span>
+          </header>
+          <div class="menu-line menu-line--featured">
+            <span class="menu-line__name" data-en="Spaghetti &amp; Meatballs" data-es="Espagueti con Alb&oacute;ndigas">Spaghetti &amp; Meatballs<span class="menu-line__badge">Pop's Pick</span></span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="The house classic. Hand-rolled meatballs, marinara from scratch." data-es="El cl&aacute;sico de la casa. Alb&oacute;ndigas hechas a mano, marinara casera.">The house classic. Hand-rolled meatballs, marinara from scratch.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Lasagna" data-es="Lasagna">Lasagna</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Layered, homemade, built the way it should be." data-es="En capas, casera, hecha como corresponde.">Layered, homemade, built the way it should be.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="House Rag&ugrave;" data-es="Rag&ugrave; de la Casa">House Rag&ugrave;</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="The recipe the place is named after. We don't share it. We just serve it." data-es="La receta que le da nombre al lugar. No la compartimos. Solo la servimos.">The recipe the place is named after. We don't share it. We just serve it.</p>
+          </div>
+        </div>
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <path d="M18 14c-2-4 1-7 4-5M24 10c0-3 3-5 6-3M32 9c0-3 4-4 6-1M38 12c2-2 5-1 5 2" stroke="#CC0000" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+              <circle cx="30" cy="38" r="16" fill="#7a2d0e" stroke="#3d1605" stroke-width="2.2"/>
+              <path d="M20 35c2-2 4-3 7-2M34 33c2 1 5 2 6 4M22 44c3 2 6 2 9 0" stroke="#3d1605" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Meatballs" data-es="Alb&oacute;ndigas">Meatballs</h3>
+            <span class="menu-section-header__es" data-en="The stars of the menu" data-es="Las estrellas del menu">The stars of the menu</span>
+          </header>
+          <div class="menu-line menu-line--featured">
+            <span class="menu-line__name" data-en="Homemade Meatballs" data-es="Alb&oacute;ndigas Caseras">Homemade Meatballs<span class="menu-line__badge">Pop's Pick</span></span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Hand-rolled, in homemade marinara. Served the way they should be." data-es="Hechas a mano, en salsa marinara casera. Servidas como deben ser.">Hand-rolled, in homemade marinara. Served the way they should be.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Meatball Sub" data-es="Torta de Alb&oacute;ndigas">Meatball Sub</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Same meatballs, in a sub if you want something serious." data-es="Las mismas alb&oacute;ndigas, en torta si quieres algo que te llene.">Same meatballs, in a sub if you want something serious.</p>
+          </div>
+        </div>
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <rect x="14" y="20" width="32" height="22" rx="3" fill="#F4D9A3" stroke="#CC0000" stroke-width="2.2" transform="rotate(-12 30 31)"/>
+              <path d="M14 28c4-2 8-3 12-2M16 36c5 0 10 1 14 3M30 26c4 0 8 1 12 2" stroke="#7a2d0e" stroke-width="1.4" stroke-linecap="round" fill="none" transform="rotate(-12 30 31)"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Fried Ravioli" data-es="Ravioles Empanizados">Fried Ravioli</h3>
+            <span class="menu-section-header__es" data-en="Order them first" data-es="P&iacute;delos primero">Order them first</span>
+          </header>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Homemade Fried Ravioli" data-es="Ravioles Empanizados Caseros">Homemade Fried Ravioli</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Crispy outside, stuffed inside, marinara for dipping. People order these before they look at the menu." data-es="Crujientes por fuera, rellenos por dentro, con marinara para mojar. Los piden antes de ver el menu.">Crispy outside, stuffed inside, marinara for dipping. People order these before they look at the menu.</p>
+          </div>
+        </div>
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <rect x="22" y="14" width="16" height="32" rx="8" fill="#F4D9A3" stroke="#CC0000" stroke-width="2.2"/>
+              <path d="M22 22c0-4 4-6 8-6s8 2 8 6M22 38c0 4 4 6 8 6s8-2 8-6" stroke="#7a2d0e" stroke-width="1.6" fill="none"/>
+              <circle cx="30" cy="14" r="3" fill="#fff" stroke="#CC0000" stroke-width="1.6"/>
+              <circle cx="30" cy="46" r="3" fill="#fff" stroke="#CC0000" stroke-width="1.6"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Cannoli" data-es="Cannoli">Cannoli</h3>
+            <span class="menu-section-header__es" data-en="Made fresh, gone fast" data-es="Reci&eacute;n hechos, vuelan">Made fresh, gone fast</span>
+          </header>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Homemade Cannoli" data-es="Cannoli Caseros">Homemade Cannoli</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="The shell cracks. The filling is creamy. By the piece or by the tray." data-es="La concha es crujiente. El relleno es cremoso. Por pieza o en charola.">The shell cracks. The filling is creamy. By the piece or by the tray.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Cannoli Tray" data-es="Charola de Cannoli">Cannoli Tray</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="For the whole table. They go fast. Order more than you think." data-es="Para toda la mesa. Vuelan. Pide m&aacute;s de los que crees.">For the whole table. They go fast. Order more than you think.</p>
+          </div>
+        </div>
+
+        <div class="menu-section-group">
+          <header class="menu-section-header">
+            <svg class="menu-section-header__doodle doodle--md" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+              <path d="M30 8c-6 6-12 14-12 22 0 8 5 16 12 22 7-6 12-14 12-22 0-8-6-16-12-22z" fill="#6FBF45" stroke="#2F6E1E" stroke-width="2"/>
+              <path d="M30 20c-3 4-5 8-5 12 0 4 2 8 5 12M30 20c3 4 5 8 5 12 0 4-2 8-5 12" stroke="#2F6E1E" stroke-width="1.4" fill="none"/>
+            </svg>
+            <h3 class="menu-section-header__title" data-en="Salads &amp; Starters" data-es="Ensaladas y Entradas">Salads &amp; Starters</h3>
+            <span class="menu-section-header__es" data-en="Start somewhere good" data-es="Empieza bien">Start somewhere good</span>
+          </header>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Antipasto Salad" data-es="Ensalada Antipasto">Antipasto Salad</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Start somewhere good before the main event." data-es="Para empezar bien antes de lo que sigue.">Start somewhere good before the main event.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Italian Salad" data-es="Ensalada Italiana">Italian Salad</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Crisp, classic, honest. Cheese bread on the side." data-es="Fresca, cl&aacute;sica, honesta. Pan de queso al lado.">Crisp, classic, honest. Cheese bread on the side.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Cheese Bread" data-es="Pan de Queso">Cheese Bread</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Hot. Pulled apart with your hands. Dipped in marinara." data-es="Caliente. Lo partes con la mano. Lo mojas en marinara.">Hot. Pulled apart with your hands. Dipped in marinara.</p>
+          </div>
+          <div class="menu-line">
+            <span class="menu-line__name" data-en="Wings" data-es="Alitas">Wings</span>
+            <span class="menu-line__leader"></span>
+            <span class="menu-line__price" data-en="ask" data-es="preguntar">ask</span>
+            <p class="menu-line__desc" data-en="Good for the game. Good for any reason." data-es="Buenas para el partido. Buenas para cualquier ocasi&oacute;n.">Good for the game. Good for any reason.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; font-family: var(--font-script); font-size: 1.3rem; color: var(--mid-gray); margin: 2rem 0 0;"
+         data-en="Ask your server for today's specials and dessert. Pop's makes it fresh."
+         data-es="Pregunta al mesero por los especiales y postres del d&iacute;a. Pop's los hace frescos.">Ask your server for today's specials and dessert. Pop's makes it fresh.</p>
+
+    </div>
+
+    <!-- legacy tab markup kept for ARIA fallback; hidden via CSS -->
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories" hidden>
       <button class="menu-tab menu-tab--active" role="tab" aria-selected="true" aria-controls="tab-pizza" id="btn-pizza"
               data-en="Pizza" data-es="Pizza">Pizza</button>
       <button class="menu-tab" role="tab" aria-selected="false" aria-controls="tab-pasta" id="btn-pasta"
@@ -330,36 +544,37 @@
 <!-- ========================
      GALLERY
      ======================== -->
-<section class="gallery reveal" id="gallery" aria-label="Gallery">
-  <div class="wrap">
+<section class="gallery gallery--polaroid reveal" id="gallery" aria-label="Gallery">
+  <div class="wrap" style="text-align:center;">
     <span class="eyebrow eyebrow--cobalt" data-en="The Place" data-es="El Lugar">The Place</span>
     <h2 class="gallery__headline"
-        data-en="Come for the Food, Stay for the Vibe"
-        data-es="Ven por la Comida, Qu&eacute;date por el Ambiente">Come for the Food, Stay for the Vibe</h2>
+        data-en="Pinned to the Wall"
+        data-es="Clavadas en la Pared">Pinned to the Wall</h2>
   </div>
 
   <div class="gallery__grid">
-    <!-- Row 1 -->
-    <button class="gallery__item gallery__item--wide" data-src="assets/interior_1.jpg" data-caption="Inside Big Ragu&#39;s" aria-label="Open photo: restaurant interior">
-      <img src="assets/interior_1.jpg" alt="Big Ragu's interior bar area with cobalt tile and warm lighting" loading="lazy">
+    <button class="gallery-polaroid-item" data-src="assets/interior_1.jpg" data-caption="Inside Big Ragu&#39;s" aria-label="Open photo: restaurant interior">
+      <img src="assets/interior_1.jpg" alt="Big Ragu's interior with warm lighting" loading="lazy">
+      <span class="gallery-polaroid-item__caption">Inside the dining room</span>
     </button>
-    <button class="gallery__item gallery__item--tall" data-src="assets/signage_1.jpg" data-caption="Grab Life by the Meatballs" aria-label="Open photo: Grab Life by the Meatballs poster">
-      <img src="assets/signage_1.jpg" alt="Framed Grab Life by the Meatballs poster inside Big Ragu's" loading="lazy">
+    <button class="gallery-polaroid-item" data-src="assets/signage_1.jpg" data-caption="Grab Life by the Meatballs" aria-label="Open photo: Grab Life by the Meatballs poster">
+      <img src="assets/signage_1.jpg" alt="Framed Grab Life by the Meatballs poster" loading="lazy">
+      <span class="gallery-polaroid-item__caption">Words on the wall</span>
     </button>
-    <!-- Row 2 -->
-    <button class="gallery__item" data-src="assets/dish_5.jpg" data-caption="Homemade meatballs in marinara" aria-label="Open photo: homemade meatballs">
-      <img src="assets/dish_5.jpg" alt="Homemade meatballs in red marinara sauce at Big Ragu's Italian Kitchen" loading="lazy">
+    <button class="gallery-polaroid-item" data-src="assets/dish_5.jpg" data-caption="Homemade meatballs" aria-label="Open photo: homemade meatballs">
+      <img src="assets/dish_5.jpg" alt="Homemade meatballs in marinara" loading="lazy">
+      <span class="gallery-polaroid-item__caption">Meatballs, today</span>
     </button>
-    <button class="gallery__item" data-src="assets/dish_6.jpg" data-caption="From the kitchen" aria-label="Open photo: dish from the kitchen">
+    <button class="gallery-polaroid-item" data-src="assets/dish_6.jpg" data-caption="From the kitchen" aria-label="Open photo: dish from the kitchen">
       <img src="assets/dish_6.jpg" alt="Fresh dish from Big Ragu's kitchen" loading="lazy">
+      <span class="gallery-polaroid-item__caption">From Pop's kitchen</span>
     </button>
-    <!-- Placeholder slots -->
-    <div class="gallery__item gallery__placeholder" aria-label="Photo coming soon: exterior">
-      <span data-en="[Photo coming soon]" data-es="[Foto pr&oacute;ximamente]">[Photo coming soon]</span>
+    <div class="gallery-polaroid-item gallery-polaroid-item--placeholder" aria-label="Exterior photo coming soon">
+      <span data-en="Photo coming soon" data-es="Foto pr&oacute;ximamente">Photo coming soon</span>
       <small data-en="Exterior" data-es="Exterior">Exterior</small>
     </div>
-    <div class="gallery__item gallery__placeholder" aria-label="Photo coming soon: outdoor seating">
-      <span data-en="[Photo coming soon]" data-es="[Foto pr&oacute;ximamente]">[Photo coming soon]</span>
+    <div class="gallery-polaroid-item gallery-polaroid-item--placeholder" aria-label="Outdoor seating photo coming soon">
+      <span data-en="Photo coming soon" data-es="Foto pr&oacute;ximamente">Photo coming soon</span>
       <small data-en="Outdoor Seating" data-es="Terraza">Outdoor Seating</small>
     </div>
   </div>
@@ -389,35 +604,35 @@
 <!-- ========================
      TESTIMONIALS
      ======================== -->
-<section class="testimonials reveal" id="reviews" aria-label="Guest Reviews">
-  <div class="wrap">
-    <span class="eyebrow eyebrow--green" data-en="Guest Voices" data-es="Lo que dicen">Guest Voices</span>
-    <h2 class="testimonials__headline"
-        data-en="Straight from the Table"
-        data-es="Directo desde la Mesa">Straight from the Table</h2>
-    <div class="testimonials__grid">
-      <blockquote class="testimonial-card reveal">
-        <p class="testimonial-card__quote">"Food was excellent, staff and Pop's the owner were very welcoming! Casual atmosphere with generous portions of authentically made food. We'll be back."</p>
-        <footer class="testimonial-card__attr">
-          <cite>Travelling_Couple_10</cite>
-          <span class="testimonial-card__source">TripAdvisor</span>
-        </footer>
-      </blockquote>
-      <blockquote class="testimonial-card reveal">
-        <p class="testimonial-card__quote">"Just got back from Italy and can't believe how good and authentic this is!!"</p>
-        <footer class="testimonial-card__attr">
-          <cite>Jerri V.</cite>
-          <span class="testimonial-card__source">TripAdvisor</span>
-        </footer>
-      </blockquote>
-      <blockquote class="testimonial-card reveal">
-        <p class="testimonial-card__quote">"Make you feel like family. Great food, great drinks -- will be a return trip every time I come to Penasco."</p>
-        <footer class="testimonial-card__attr">
-          <cite>Lance Tardiff</cite>
-          <span class="testimonial-card__source">Restaurant Guru</span>
-        </footer>
-      </blockquote>
-    </div>
+<section class="testimonials testimonials--napkins reveal" id="reviews" aria-label="Guest Reviews">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow eyebrow--green" data-en="What People Wrote" data-es="Lo que escribieron">What People Wrote</span>
+    <h2 class="testimonials__headline" style="font-family: var(--font-script); font-weight: 700; font-size: clamp(2.2rem, 5vw, 3rem); margin: 0.5rem 0 0; color: var(--ink);"
+        data-en="Notes from the table"
+        data-es="Notas de la mesa">Notes from the table</h2>
+  </div>
+  <div class="testimonials__grid">
+    <blockquote class="napkin reveal">
+      <p class="napkin__quote">Food was excellent, staff and Pop's the owner were very welcoming. Casual atmosphere with generous portions of authentically made food. We'll be back.</p>
+      <footer class="napkin__attr">
+        <cite>Travelling_Couple_10</cite>
+        <span class="napkin__attr-source">TripAdvisor</span>
+      </footer>
+    </blockquote>
+    <blockquote class="napkin reveal">
+      <p class="napkin__quote">Just got back from Italy and can't believe how good and authentic this is!!</p>
+      <footer class="napkin__attr">
+        <cite>Jerri V.</cite>
+        <span class="napkin__attr-source">TripAdvisor</span>
+      </footer>
+    </blockquote>
+    <blockquote class="napkin reveal">
+      <p class="napkin__quote">Make you feel like family. Great food, great drinks. Will be a return trip every time I come to Penasco.</p>
+      <footer class="napkin__attr">
+        <cite>Lance Tardiff</cite>
+        <span class="napkin__attr-source">Restaurant Guru</span>
+      </footer>
+    </blockquote>
   </div>
 </section>
 
@@ -450,6 +665,42 @@
       </address>
       <p class="find-us__landmark" data-en="Near the Las Conchas roundabout. Free parking." data-es="Cerca de Las Conchas. Estacionamiento gratuito.">Near the Las Conchas roundabout. Free parking.</p>
       <a href="tel:+526381254760" class="find-us__phone">+52 638 125 4760</a>
+
+      <div class="chalkboard" aria-label="Hours of operation">
+        <h3 class="chalkboard__title" data-en="Hours" data-es="Horarios">Hours</h3>
+        <span class="chalkboard__rule"></span>
+        <div class="chalkboard__rows">
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Sun" data-es="Dom">Sun</span>
+            <span class="chalkboard__time">12 &middot; 9</span>
+          </div>
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Mon" data-es="Lun">Mon</span>
+            <span class="chalkboard__time">1 &middot; 9</span>
+          </div>
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Tue" data-es="Mar">Tue</span>
+            <span class="chalkboard__time">12 &middot; 9</span>
+          </div>
+          <div class="chalkboard__row chalkboard__row--closed">
+            <span class="chalkboard__day" data-en="Wed" data-es="Mi&eacute;">Wed</span>
+            <span class="chalkboard__time" data-en="Closed" data-es="Cerrado">Closed</span>
+          </div>
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Thu" data-es="Jue">Thu</span>
+            <span class="chalkboard__time">12 &middot; 9</span>
+          </div>
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Fri" data-es="Vie">Fri</span>
+            <span class="chalkboard__time">12 &middot; 10</span>
+          </div>
+          <div class="chalkboard__row">
+            <span class="chalkboard__day" data-en="Sat" data-es="S&aacute;b">Sat</span>
+            <span class="chalkboard__time">12 &middot; 10</span>
+          </div>
+        </div>
+        <p class="chalkboard__footnote" data-en="Fri &amp; Sat open time to be confirmed" data-es="Apertura vie y s&aacute;b a confirmar">Fri &amp; Sat open time to be confirmed</p>
+      </div>
 
       <div class="hours-table-wrap">
         <table class="hours-table" aria-label="Hours of operation">
