@@ -1627,8 +1627,15 @@ blockquote { margin: 0; }
 .hero-editorial__h1 .accent-green { color: var(--green); }
 .hero-editorial__h1 .with-doodle {
   display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+  align-items: flex-end;
+  gap: 0.08em;
+  line-height: 0.92;
+}
+.doodle--period {
+  width: 0.62em;
+  height: 0.62em;
+  margin-bottom: 0.04em;
+  flex-shrink: 0;
 }
 .hero-editorial__sub {
   font-family: var(--font-body);
@@ -2011,25 +2018,101 @@ blockquote { margin: 0; }
 }
 
 /* =====================================================
-   HOURS - CHALKBOARD
+   HOURS - TRATTORIA TABLE CARD
    ===================================================== */
-.chalkboard {
-  background: var(--chalkboard);
+.hours-card {
+  background: #fff;
   background-image:
-    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.04) 0, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.03) 0, transparent 50%),
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 3px);
-  color: #f4eed8;
-  padding: 1.6rem 1.4rem;
-  border: 8px solid #6b4626;
-  border-radius: 4px;
-  box-shadow:
-    inset 0 0 0 2px #4a2f1a,
-    inset 0 0 30px rgba(0,0,0,0.5),
-    0 8px 18px rgba(0,0,0,0.25);
+    radial-gradient(circle at 25% 30%, rgba(170,130,80,0.04) 0, transparent 60%),
+    radial-gradient(circle at 75% 70%, rgba(170,130,80,0.05) 0, transparent 60%);
+  border: 1.5px solid var(--ink);
+  padding: 1.8rem 1.5rem 1.4rem;
   position: relative;
-  margin-top: 1.4rem;
+  margin-top: 1.6rem;
+  max-width: 380px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06);
+}
+.hours-card::before {
+  content: '';
+  position: absolute;
+  top: -1.5px; left: -1.5px; right: -1.5px;
+  height: 8px;
+  background: linear-gradient(to right,
+    #008C45 0%, #008C45 33.33%,
+    #F4F5F0 33.33%, #F4F5F0 66.66%,
+    #CD212A 66.66%, #CD212A 100%);
+  border-bottom: 1.5px solid var(--ink);
+}
+.hours-card::after {
+  content: '';
+  position: absolute;
+  inset: 12px 8px 8px;
+  border: 1px dashed rgba(0,0,0,0.16);
+  pointer-events: none;
+}
+.hours-card__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin: 0.4rem 0 1.1rem;
+  color: var(--ink);
+  position: relative;
+}
+.hours-card__rows {
+  position: relative;
+}
+.hours-card__row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.45rem 0.6rem;
+}
+.hours-card__day {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.hours-card__leader {
+  border-bottom: 2px dotted rgba(0,0,0,0.35);
+  align-self: end;
+  margin: 0 0.4rem 0.35em;
+  min-width: 24px;
+}
+.hours-card__time {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  color: var(--mid-gray);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.hours-card__row--closed .hours-card__day { color: var(--red); }
+.hours-card__row--closed .hours-card__time {
+  color: var(--red);
   font-family: var(--font-script);
+  font-size: 1.1rem;
+  letter-spacing: 0;
+}
+.hours-card__footnote {
+  font-family: var(--font-script);
+  font-size: 1.05rem;
+  color: var(--mid-gray);
+  text-align: center;
+  margin: 1rem 0 0;
+  font-style: normal;
+  letter-spacing: 0;
+  position: relative;
+}
+
+/* keep legacy chalkboard rules but neutralize so any stray markup hides */
+.chalkboard {
+  display: none;
 }
 .chalkboard__title {
   font-family: var(--font-script);
