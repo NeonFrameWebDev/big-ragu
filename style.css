@@ -168,10 +168,10 @@ blockquote { margin: 0; }
 }
 
 .loader__logo {
-  width: 120px;
-  height: 120px;
+  width: auto;
+  height: 200px;
+  max-width: 70vw;
   object-fit: contain;
-  border-radius: 50%;
   animation: loaderScale 0.6s ease-out forwards;
 }
 
@@ -1209,6 +1209,17 @@ blockquote { margin: 0; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto 0.9rem;
+  width: auto;
+  height: 130px;
+  background: var(--cream);
+  padding: 14px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
 .footer__tagline {
