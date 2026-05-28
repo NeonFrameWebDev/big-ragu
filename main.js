@@ -13,14 +13,32 @@
 
   document.body.classList.add('loading');
 
-  // Loader runs 1.2s then fades out over 0.4s
+  // Single, idempotent dismiss. Called by whichever path fires first.
+  let dismissed = false;
+  function dismiss() {
+    if (dismissed) return;
+    dismissed = true;
+    loader.hidden = true;
+    loader.classList.add('fade-out');
+    document.body.classList.remove('loading');
+  }
+
+  // Normal path: after 1.2s, fade out; remove on animationend.
   setTimeout(() => {
     loader.classList.add('fade-out');
-    loader.addEventListener('animationend', () => {
-      loader.hidden = true;
-      document.body.classList.remove('loading');
-    }, { once: true });
+    loader.addEventListener('animationend', dismiss, { once: true });
+    // Fallback in case animationend never fires (reduced-motion, backgrounded tab,
+    // throttled animation): force-dismiss shortly after the fade should have finished.
+    setTimeout(dismiss, 700);
   }, 1200);
+
+  // Hard safety net: the loader must NEVER trap the page. If anything above is
+  // interrupted (tab backgrounded during load, JS hiccup), this guarantees the
+  // site becomes usable. Also dismiss immediately if the user interacts.
+  setTimeout(dismiss, 3500);
+  ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach((evt) => {
+    window.addEventListener(evt, dismiss, { once: true, passive: true });
+  });
 })();
 
 

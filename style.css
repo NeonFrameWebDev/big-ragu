@@ -2312,3 +2312,23 @@ blockquote { margin: 0; }
 /* Hide the existing hours-table in favor of chalkboard */
 .hours-table-wrap { display: none; }
 
+/* ============================================================
+   Narrow-phone hardening (< 400px) + overflow safety.
+   The layout is mobile-first and reflows cleanly, but real phones go down to
+   ~320px (narrower than headless tooling can render). These guarantee no long
+   word or 3-tier price string can ever overflow on the smallest screens.
+   ============================================================ */
+.menu-line__name,
+.menu-line__desc,
+.menu-size-key,
+.menu-price-note,
+.footer__address,
+.footer__tagline { overflow-wrap: break-word; }
+
+@media (max-width: 400px) {
+  :root { --gutter: 1.05rem; }                 /* tighter side padding on very small phones */
+  .menu-line__name  { font-size: 1rem; }
+  .menu-line__price { font-size: 0.82rem; white-space: nowrap; }  /* keep "$140 / $240 / $300" on one line */
+  .menu-line { gap: 0.3rem; column-gap: 0.5rem; }
+}
+
