@@ -1872,6 +1872,28 @@ blockquote { margin: 0; }
   margin-left: auto;
 }
 
+/* Small note that introduces a section: size legend, sauce list, all-prices-same callout */
+.menu-size-key {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--mid-gray);
+  margin: 0 0 0.6rem;
+  line-height: 1.45;
+  max-width: 60ch;
+}
+
+/* "All prices in MXN" disclaimer at the top of the menu */
+.menu-price-note {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--mid-gray);
+  margin: -0.5rem auto 2rem;
+  max-width: 60ch;
+}
+
 .menu-line {
   display: grid;
   grid-template-columns: auto 1fr auto;
