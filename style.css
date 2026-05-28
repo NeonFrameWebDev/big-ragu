@@ -1181,13 +1181,26 @@ blockquote { margin: 0; }
   border-top: 1px solid var(--dark-gray);
 }
 
+/* Footer top row: clean centered stack on mobile, balanced 3-part row on desktop.
+   Mobile is a flex column (everything centered); desktop is brand-left / links-center /
+   socials-right via space-between. No fixed columns, no orphaned vertical centering. */
 .footer__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
   text-align: center;
+}
+
+/* Brand block: logo + tagline as ONE unit so they always share an alignment edge. */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  max-width: 100%;
 }
 
 .footer__brand-name {
@@ -1197,16 +1210,15 @@ blockquote { margin: 0; }
   color: var(--cream);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
 }
 
 .footer__logo {
   display: block;
-  margin: 0 auto 0.9rem;
   width: auto;
-  height: 130px;
+  height: 92px;
+  max-width: 100%;
   background: var(--cream);
-  padding: 14px 22px;
+  padding: 11px 16px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
@@ -1218,10 +1230,13 @@ blockquote { margin: 0; }
   color: var(--red);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  max-width: 26ch;
+  line-height: 1.2;
 }
 
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
 }
@@ -1253,17 +1268,19 @@ blockquote { margin: 0; }
 
 @media (min-width: 768px) {
   .footer__inner {
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 2.5rem;
     text-align: left;
   }
-  .footer__links { justify-content: center; }
-  .footer__socials { justify-content: flex-end; }
+  .footer__brand { align-items: flex-start; }   /* logo + tagline share the left edge */
+  .footer__tagline { max-width: none; }
 }
 
 .footer__bottom {
   border-top: 1px solid var(--dark-gray);
-  padding: 1rem 0;
+  padding: 1rem var(--gutter);
 }
 
 .footer__address {
@@ -1272,11 +1289,13 @@ blockquote { margin: 0; }
   color: var(--mid-gray);
   margin: 0 0 0.25rem;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .footer__address a {
   color: inherit;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .footer__address a:hover { color: var(--gold); }
 
@@ -1286,6 +1305,7 @@ blockquote { margin: 0; }
   color: var(--mid-gray);
   margin: 0;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 /* ================================
