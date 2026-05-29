@@ -1266,15 +1266,11 @@ blockquote { margin: 0; }
 }
 .footer__social-icon:hover { color: var(--gold); }
 
+/* Desktop keeps the same clean CENTERED stack as mobile (logo card, tagline,
+   links row, socials row), just with a little more breathing room. No hard-left
+   brand block, so the whole footer reads centered and balanced on every screen. */
 @media (min-width: 768px) {
-  .footer__inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.5rem;
-    text-align: left;
-  }
-  .footer__brand { align-items: flex-start; }   /* logo + tagline share the left edge */
+  .footer__inner { gap: 1.9rem; padding-top: 3.5rem; padding-bottom: 3rem; }
   .footer__tagline { max-width: none; }
 }
 
