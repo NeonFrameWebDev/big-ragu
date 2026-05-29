@@ -225,14 +225,33 @@
   const els = document.querySelectorAll('.reveal');
   if (!els.length) return;
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  // Fallback: if IntersectionObserver is unavailable, just show everything.
+  if (!('IntersectionObserver' in window)) {
+    els.forEach((el) => el.classList.add('visible'));
+    return;
+  }
+
+  // threshold:0 + a bottom rootMargin so an element reveals the moment its top edge
+  // enters the viewport. CRITICAL for tall sections (the full menu is ~6800px tall on
+  // mobile): a 0.15 threshold could NEVER be met on a phone because the section is ~9x
+  // the screen height, so the menu stayed at opacity:0 (invisible) and left a huge gap.
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 
-  els.forEach(el => observer.observe(el));
+  els.forEach((el) => observer.observe(el));
+
+  // Safety net: anything still hidden after 2.5s (e.g., observer never fired for a tall
+  // element already spanning the viewport) gets revealed so content can't be stuck invisible.
+  setTimeout(() => {
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('visible');
+    });
+  }, 2500);
 })();
