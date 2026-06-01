@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neonframewebdev.github.io/big-ragu/sitemap.xml
+Sitemap: https://thebigragus.com/sitemap.xml
