@@ -2328,3 +2328,41 @@ blockquote { margin: 0; }
   .menu-line { gap: 0.3rem; column-gap: 0.5rem; }
 }
 
+/* ---- Specials ---- */
+.specials {
+  padding: 4rem 0 5rem;
+  border-top: 3px solid var(--ink);
+}
+.specials__hdr {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.specials__title {
+  font-family: var(--font-script);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--ink);
+  margin: 0.4rem 0 0;
+}
+.specials__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.specials__card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  border: 2px solid var(--ink);
+}
+.specials__card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 540px) {
+  .specials__grid { grid-template-columns: 1fr; max-width: 380px; }
+}
+
