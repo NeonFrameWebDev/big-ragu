@@ -2350,6 +2350,7 @@ blockquote { margin: 0; }
   gap: 2rem;
   max-width: 860px;
   margin: 0 auto;
+  align-items: center;
 }
 .specials__card {
   border-radius: 8px;
